@@ -1,0 +1,35 @@
+title = "Color Schemes for Pantheon Terminal"
+# This is just a list of nice-looking color schemes
+# formatted for easy copy/pasting into dconf-editor
+# to spice up your Pantheon Terminal in elementary.
+
+[ir_black]
+background   = "#000000"
+foreground   = "#F6F3E8"
+cursor-color = "#FFA560"
+palette      = "#4E4E4E:#FF6C60:#A8FF60:#FFFFB6:#96CBFE:#FF73FD:#C6C5FE:#EEEEEE:#7C7C7C:#FFB6B0:#CEFFAB:#FFFFCB:#B5DCFE:#FF9CFE:#DFDFFE:#FFFFFF"
+source       = "http://toddwerth.com/2008/04/30/the-last-vim-color-scheme-youll-ever-need/"
+
+[solarized]
+background   = "#002b36"
+foreground   = "#e4e4e4"
+cursor-color = "#e4e4e4"
+palette      = "#262626:#d70000:#5f8700:#af8700:#0087ff:#af005f:#00afaf:#e4e4e4:#1c1c1c:#d75f00:#585858:#626262:#808080:#5f5faf:#8a8a8a:#ffffd7"
+source       = "http://ethanschoonover.com/solarized"
+
+[railscasts]
+background   = "#2b2b2b"
+foreground   = "#E6E1DC"
+cursor-color = "#ffffff"
+palette      = "#404040:#d75f5f:#87af5f:#d7af87:#8787af:#bd53a5:#5fafaf:#e6e1dc:#6f6f6f:#e33636:#98e34d:#ffd75f:#7373c9:#d633b2:#44C9C9:#ffffff"
+# palette      = "BLACK:#da4938:#509e50:#cc7733:#6d9cbd:MAGENTA:CYAN:WHITE:BRIGHTBLACK:BRIGHTRED:#a5c160:#ffc66d:#cfcfff:BRIGHTMAGENTA:BRIGHTCYAN:BRIGHTWHITE"
+source       = "http://railscasts.com/about"
+
+
+
+# []
+# background   = ""
+# foreground   = ""
+# cursor-color = ""
+# palette      = "BLACK:RED:GREEN:YELLOW:BLUE:MAGENTA:CYAN:WHITE:BRIGHTBLACK:BRIGHTRED:BRIGHTGREEN:BRIGHTYELLOW:BRIGHTBLUE:BRIGHTMAGENTA:BRIGHTCYAN:BRIGHTWHITE"
+# source       = ""

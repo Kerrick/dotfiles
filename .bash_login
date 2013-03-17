@@ -1,0 +1,6 @@
+# Add stuff to PATH
+PATH=$PATH:$HOME/.rvm/bin
+source $HOME/.rvm/scripts/rvm
+export PATH="/usr/local/heroku/bin:$PATH"
+
+source ~/.bashrc

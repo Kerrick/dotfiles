@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="bash_aliases bash_colors bash_login bash_profile bashrc colors.sh git pantheon-terminal-colors.toml profile ps1_functions tmux.conf .vim .vimrc"    # list of files/folders to symlink in homedir
+files="bash_aliases bash_colors bash_login bash_profile bashrc zshrc colors.sh git pantheon-terminal-colors.toml profile ps1_functions tmux.conf .vim .vimrc"    # list of files/folders to symlink in homedir
 
 ##########
 

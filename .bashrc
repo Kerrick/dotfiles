@@ -59,3 +59,6 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+
+# added by travis gem
+[ -f /Users/kerrick/.travis/travis.sh ] && source /Users/kerrick/.travis/travis.sh

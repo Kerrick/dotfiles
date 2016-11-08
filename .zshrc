@@ -2,13 +2,18 @@
 # EXPORTS #
 ###########
 
-  # Miscellaneous
-  export GPGKEY=06DFCD97
-  export SHELL=/usr/bin/zsh
-
   # rbenv
   export PATH="$HOME/.rbenv/bin:$PATH"
   eval "$(rbenv init -)"
+
+  # node
+  export PATH="$HOME/.node/bin:$PATH"
+
+  # Miscellaneous
+  export GPGKEY=06DFCD97
+  export SHELL=/usr/bin/zsh
+  export PATH="/Applications/teeclc:$PATH"
+  export PATH="/usr/local/share/npm/bin:$PATH"
 
 
 ###########
@@ -17,9 +22,27 @@
 
   # Instead of deciding to
   # Fix tmux and vim 256 color schemes not playing nicely
-  # alias tmux="TERM=screen-256color-bce tmux"
+  alias tmux="TERM=screen-256color-bce tmux"
   # I'm going to just always pretend I'm on a 16-color TTY.
-  alias tmux="TERM=xterm tmux"
+  #alias tmux="TERM=xterm tmux"
+
+  # Sublime Text
+  alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+
+  # Elinks development version because 0.11.x has a bug on OS X Lion
+  alias elinks="/usr/local/Cellar/elinks/0.12pre6/bin/elinks"
+
+  # Open Google Chrome on OS X with --disable-web-security flag set.
+  alias unsafe-chrome="open -a Google\ Chrome --args --disable-web-security"
+
+  # Syntax Highlighting the Clipboard
+  function highlight() { export LC_CTYPE=UTF-8; pbpaste | /usr/local/bin/pygmentize -l "$@" -f rtf -O style=monokai | pbcopy -Prefer rtf; }
+
+  # Atlassian SourceTree
+  alias stree="/Applications/SourceTree.app/Contents/Resources/stree"
+
+  # White Noise
+  alias spaceship="play -c2 -n synth whitenoise band -n 100 24 band -n 300 100 gain +20"
 
 
 ###########
@@ -60,6 +83,7 @@
 
     promptchar='%#'
     promptchar='❯'
+    #promptchar='🚁 '
     if [ $UID -eq 0 ]; then
       promptchar='#'
     fi
@@ -90,3 +114,25 @@
   }
   PROMPT="$(__prompt_character) "
   #RPROMPT="$(__ruby_version)"
+
+###########
+# PLUGINS #
+###########
+
+  # completions
+  plugins+=(zsh-completions)
+  autoload -U compinit && compinit
+
+
+# recommended by brew doctor
+#export PATH='/usr/local/bin:/Users/kerrick/.rbenv/shims:/Users/kerrick/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/kerrick/.rbenv/shims'
+
+# DO NOT EDIT BELOW THIS LINE
+
+export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
+
+# added by travis gem
+[ -f /Users/kerrick/.travis/travis.sh ] && source /Users/kerrick/.travis/travis.sh
